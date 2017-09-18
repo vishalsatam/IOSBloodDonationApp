@@ -1,0 +1,704 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E5040D0F1CD294E4002E5629 /* bloodDropMapAnnotation.png in Resources */ = {isa = PBXBuildFile; fileRef = E5040D0E1CD294E4002E5629 /* bloodDropMapAnnotation.png */; };
+		E5040D111CD2A95E002E5629 /* Appointment.m in Sources */ = {isa = PBXBuildFile; fileRef = E5040D101CD2A95E002E5629 /* Appointment.m */; };
+		E50FC6461CD345F600BD06CE /* ViewAppointmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E50FC6451CD345F600BD06CE /* ViewAppointmentViewController.m */; };
+		E50FC6491CD34D5700BD06CE /* MyAppointmentsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E50FC6481CD34D5700BD06CE /* MyAppointmentsTableViewController.m */; };
+		E5116B491CD4155C0050C249 /* Donation.m in Sources */ = {isa = PBXBuildFile; fileRef = E5116B481CD4155C0050C249 /* Donation.m */; };
+		E5116B4D1CD431440050C249 /* blood.png in Resources */ = {isa = PBXBuildFile; fileRef = E5116B4A1CD431440050C249 /* blood.png */; };
+		E5116B4E1CD431440050C249 /* double.png in Resources */ = {isa = PBXBuildFile; fileRef = E5116B4B1CD431440050C249 /* double.png */; };
+		E5116B4F1CD431440050C249 /* platelets.png in Resources */ = {isa = PBXBuildFile; fileRef = E5116B4C1CD431440050C249 /* platelets.png */; };
+		E5116B521CD433AC0050C249 /* DonationHistoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5116B511CD433AC0050C249 /* DonationHistoryTableViewController.m */; };
+		E5116B551CD49B040050C249 /* ViewDonationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5116B541CD49B040050C249 /* ViewDonationViewController.m */; };
+		E5116B591CD49B240050C249 /* processing.png in Resources */ = {isa = PBXBuildFile; fileRef = E5116B561CD49B240050C249 /* processing.png */; };
+		E5116B5A1CD49B240050C249 /* testing.png in Resources */ = {isa = PBXBuildFile; fileRef = E5116B571CD49B240050C249 /* testing.png */; };
+		E5116B5B1CD49B240050C249 /* thedonation.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E5116B581CD49B240050C249 /* thedonation.jpg */; };
+		E511F3231CD1C141006E3951 /* HospitalListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E511F3221CD1C141006E3951 /* HospitalListTableViewController.m */; };
+		E511F3251CD1E152006E3951 /* CollectionCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = E511F3241CD1E152006E3951 /* CollectionCenter.m */; };
+		E511F3281CD1EF90006E3951 /* AvailableAppointmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E511F3271CD1EF90006E3951 /* AvailableAppointmentViewController.m */; };
+		E53952581CD048D6007E8D51 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E53952551CD048D6007E8D51 /* FBSDKCoreKit.framework */; };
+		E53952591CD048D6007E8D51 /* FBSDKCoreKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E53952551CD048D6007E8D51 /* FBSDKCoreKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E539525A1CD048D6007E8D51 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E53952561CD048D6007E8D51 /* FBSDKLoginKit.framework */; };
+		E539525B1CD048D6007E8D51 /* FBSDKLoginKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E53952561CD048D6007E8D51 /* FBSDKLoginKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E539525C1CD048D6007E8D51 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E53952571CD048D6007E8D51 /* FBSDKShareKit.framework */; };
+		E539525D1CD048D6007E8D51 /* FBSDKShareKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E53952571CD048D6007E8D51 /* FBSDKShareKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E539525F1CD050BB007E8D51 /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E539525E1CD050BB007E8D51 /* Firebase.framework */; };
+		E53952601CD050BB007E8D51 /* Firebase.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E539525E1CD050BB007E8D51 /* Firebase.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E53952621CD05108007E8D51 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E53952611CD05108007E8D51 /* libicucore.dylib */; };
+		E53952641CD05119007E8D51 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E53952631CD05119007E8D51 /* libc++.dylib */; };
+		E53952661CD05127007E8D51 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E53952651CD05127007E8D51 /* CFNetwork.framework */; };
+		E53952681CD05130007E8D51 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E53952671CD05130007E8D51 /* Security.framework */; };
+		E539526A1CD0513B007E8D51 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E53952691CD0513B007E8D51 /* SystemConfiguration.framework */; };
+		E539526D1CD07BF3007E8D51 /* HomeScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E539526C1CD07BF3007E8D51 /* HomeScreenViewController.m */; };
+		E53952701CD09368007E8D51 /* CreateAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E539526F1CD09368007E8D51 /* CreateAccountViewController.m */; };
+		E53952731CD0968D007E8D51 /* FireBaseConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = E53952721CD0968D007E8D51 /* FireBaseConfig.m */; };
+		E53B16A81CD4BDB800F5CA53 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E53B16A71CD4BDB800F5CA53 /* background.jpg */; };
+		E53B16AA1CD4D03900F5CA53 /* launchScreen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E53B16A91CD4D03900F5CA53 /* launchScreen.jpg */; };
+		E53B16AD1CD4D48100F5CA53 /* RequestBloodTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E53B16AC1CD4D48100F5CA53 /* RequestBloodTableViewController.m */; };
+		E53B16B01CD4D54700F5CA53 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = E53B16AF1CD4D54700F5CA53 /* User.m */; };
+		E53B16B21CD4F40100F5CA53 /* createAccountBackground.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E53B16B11CD4F40100F5CA53 /* createAccountBackground.jpg */; };
+		E5942E8A1CD0084500CFAE96 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E5942E891CD0084500CFAE96 /* main.m */; };
+		E5942E8D1CD0084500CFAE96 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E5942E8C1CD0084500CFAE96 /* AppDelegate.m */; };
+		E5942E901CD0084500CFAE96 /* BloodDonation_FinalProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E5942E8E1CD0084500CFAE96 /* BloodDonation_FinalProject.xcdatamodeld */; };
+		E5942E931CD0084500CFAE96 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5942E921CD0084500CFAE96 /* ViewController.m */; };
+		E5942E961CD0084500CFAE96 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5942E941CD0084500CFAE96 /* Main.storyboard */; };
+		E5942E981CD0084500CFAE96 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5942E971CD0084500CFAE96 /* Images.xcassets */; };
+		E5942E9B1CD0084500CFAE96 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5942E991CD0084500CFAE96 /* LaunchScreen.xib */; };
+		E5942EA71CD0084500CFAE96 /* BloodDonation_FinalProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E5942EA61CD0084500CFAE96 /* BloodDonation_FinalProjectTests.m */; };
+		E5942EB31CD0088300CFAE96 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5942EB21CD0088300CFAE96 /* LoginViewController.m */; };
+		E5942ECC1CD01A7900CFAE96 /* loginHeader.png in Resources */ = {isa = PBXBuildFile; fileRef = E5942ECB1CD01A7900CFAE96 /* loginHeader.png */; };
+		E5AD37D41CD15482000700EF /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5AD37D31CD15482000700EF /* ProfileViewController.m */; };
+		E5AD37D81CD16642000700EF /* noPhoto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E5AD37D71CD16642000700EF /* noPhoto.jpg */; };
+		E5DC28841CD205D40030B4BD /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5DC28831CD205D40030B4BD /* MapKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E5942EA11CD0084500CFAE96 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E5942E7C1CD0084500CFAE96 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E5942E831CD0084500CFAE96;
+			remoteInfo = "BloodDonation-FinalProject";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E5942EBD1CD00A7700CFAE96 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E539525B1CD048D6007E8D51 /* FBSDKLoginKit.framework in Embed Frameworks */,
+				E53952591CD048D6007E8D51 /* FBSDKCoreKit.framework in Embed Frameworks */,
+				E539525D1CD048D6007E8D51 /* FBSDKShareKit.framework in Embed Frameworks */,
+				E53952601CD050BB007E8D51 /* Firebase.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		E5040D0E1CD294E4002E5629 /* bloodDropMapAnnotation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bloodDropMapAnnotation.png; path = "BloodDonation-FinalProject/Images/bloodDropMapAnnotation.png"; sourceTree = "<group>"; };
+		E5040D101CD2A95E002E5629 /* Appointment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Appointment.m; sourceTree = "<group>"; };
+		E50FC6441CD345F600BD06CE /* ViewAppointmentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewAppointmentViewController.h; sourceTree = "<group>"; };
+		E50FC6451CD345F600BD06CE /* ViewAppointmentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewAppointmentViewController.m; sourceTree = "<group>"; };
+		E50FC6471CD34D5700BD06CE /* MyAppointmentsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyAppointmentsTableViewController.h; sourceTree = "<group>"; };
+		E50FC6481CD34D5700BD06CE /* MyAppointmentsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyAppointmentsTableViewController.m; sourceTree = "<group>"; };
+		E5116B471CD413530050C249 /* Donation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Donation.h; sourceTree = "<group>"; };
+		E5116B481CD4155C0050C249 /* Donation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Donation.m; sourceTree = "<group>"; };
+		E5116B4A1CD431440050C249 /* blood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blood.png; path = "BloodDonation-FinalProject/Images/blood.png"; sourceTree = "<group>"; };
+		E5116B4B1CD431440050C249 /* double.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = double.png; path = "BloodDonation-FinalProject/Images/double.png"; sourceTree = "<group>"; };
+		E5116B4C1CD431440050C249 /* platelets.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = platelets.png; path = "BloodDonation-FinalProject/Images/platelets.png"; sourceTree = "<group>"; };
+		E5116B501CD433AC0050C249 /* DonationHistoryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DonationHistoryTableViewController.h; sourceTree = "<group>"; };
+		E5116B511CD433AC0050C249 /* DonationHistoryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DonationHistoryTableViewController.m; sourceTree = "<group>"; };
+		E5116B531CD49B040050C249 /* ViewDonationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewDonationViewController.h; sourceTree = "<group>"; };
+		E5116B541CD49B040050C249 /* ViewDonationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewDonationViewController.m; sourceTree = "<group>"; };
+		E5116B561CD49B240050C249 /* processing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = processing.png; path = "BloodDonation-FinalProject/Images/processing.png"; sourceTree = "<group>"; };
+		E5116B571CD49B240050C249 /* testing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = testing.png; path = "BloodDonation-FinalProject/Images/testing.png"; sourceTree = "<group>"; };
+		E5116B581CD49B240050C249 /* thedonation.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = thedonation.jpg; path = "BloodDonation-FinalProject/Images/thedonation.jpg"; sourceTree = "<group>"; };
+		E511F3201CD1BC79006E3951 /* CollectionCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionCenter.h; sourceTree = "<group>"; };
+		E511F3211CD1C141006E3951 /* HospitalListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HospitalListTableViewController.h; sourceTree = "<group>"; };
+		E511F3221CD1C141006E3951 /* HospitalListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HospitalListTableViewController.m; sourceTree = "<group>"; };
+		E511F3241CD1E152006E3951 /* CollectionCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionCenter.m; sourceTree = "<group>"; };
+		E511F3261CD1EF90006E3951 /* AvailableAppointmentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AvailableAppointmentViewController.h; sourceTree = "<group>"; };
+		E511F3271CD1EF90006E3951 /* AvailableAppointmentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AvailableAppointmentViewController.m; sourceTree = "<group>"; };
+		E511F3291CD1FE81006E3951 /* Appointment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Appointment.h; sourceTree = "<group>"; };
+		E53952551CD048D6007E8D51 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		E53952561CD048D6007E8D51 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		E53952571CD048D6007E8D51 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		E539525E1CD050BB007E8D51 /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Firebase.framework; sourceTree = "<group>"; };
+		E53952611CD05108007E8D51 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		E53952631CD05119007E8D51 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		E53952651CD05127007E8D51 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		E53952671CD05130007E8D51 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		E53952691CD0513B007E8D51 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		E539526B1CD07BDF007E8D51 /* HomeScreenViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeScreenViewController.h; sourceTree = "<group>"; };
+		E539526C1CD07BF3007E8D51 /* HomeScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeScreenViewController.m; sourceTree = "<group>"; };
+		E539526E1CD09368007E8D51 /* CreateAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateAccountViewController.h; sourceTree = "<group>"; };
+		E539526F1CD09368007E8D51 /* CreateAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateAccountViewController.m; sourceTree = "<group>"; };
+		E53952721CD0968D007E8D51 /* FireBaseConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FireBaseConfig.m; sourceTree = "<group>"; };
+		E53952741CD09708007E8D51 /* FireBaseConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FireBaseConfig.h; sourceTree = "<group>"; };
+		E53B16A71CD4BDB800F5CA53 /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = background.jpg; path = "BloodDonation-FinalProject/Images/background.jpg"; sourceTree = "<group>"; };
+		E53B16A91CD4D03900F5CA53 /* launchScreen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = launchScreen.jpg; path = "BloodDonation-FinalProject/Images/launchScreen.jpg"; sourceTree = "<group>"; };
+		E53B16AB1CD4D48100F5CA53 /* RequestBloodTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestBloodTableViewController.h; sourceTree = "<group>"; };
+		E53B16AC1CD4D48100F5CA53 /* RequestBloodTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestBloodTableViewController.m; sourceTree = "<group>"; };
+		E53B16AE1CD4D4CE00F5CA53 /* User.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		E53B16AF1CD4D54700F5CA53 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		E53B16B11CD4F40100F5CA53 /* createAccountBackground.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = createAccountBackground.jpg; path = "BloodDonation-FinalProject/Images/createAccountBackground.jpg"; sourceTree = "<group>"; };
+		E5942E841CD0084500CFAE96 /* BloodDonation-FinalProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BloodDonation-FinalProject.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5942E881CD0084500CFAE96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5942E891CD0084500CFAE96 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E5942E8B1CD0084500CFAE96 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E5942E8C1CD0084500CFAE96 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E5942E8F1CD0084500CFAE96 /* BloodDonation_FinalProject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BloodDonation_FinalProject.xcdatamodel; sourceTree = "<group>"; };
+		E5942E911CD0084500CFAE96 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E5942E921CD0084500CFAE96 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E5942E951CD0084500CFAE96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E5942E971CD0084500CFAE96 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E5942E9A1CD0084500CFAE96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		E5942EA01CD0084500CFAE96 /* BloodDonation-FinalProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BloodDonation-FinalProjectTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5942EA51CD0084500CFAE96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5942EA61CD0084500CFAE96 /* BloodDonation_FinalProjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BloodDonation_FinalProjectTests.m; sourceTree = "<group>"; };
+		E5942EB11CD0087600CFAE96 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		E5942EB21CD0088300CFAE96 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		E5942ECB1CD01A7900CFAE96 /* loginHeader.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = loginHeader.png; path = "BloodDonation-FinalProject/Images/loginHeader.png"; sourceTree = "<group>"; };
+		E5AD37D21CD15482000700EF /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		E5AD37D31CD15482000700EF /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		E5AD37D71CD16642000700EF /* noPhoto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = noPhoto.jpg; path = "BloodDonation-FinalProject/Images/noPhoto.jpg"; sourceTree = "<group>"; };
+		E5DC28831CD205D40030B4BD /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E5942E811CD0084500CFAE96 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5DC28841CD205D40030B4BD /* MapKit.framework in Frameworks */,
+				E539526A1CD0513B007E8D51 /* SystemConfiguration.framework in Frameworks */,
+				E53952681CD05130007E8D51 /* Security.framework in Frameworks */,
+				E53952661CD05127007E8D51 /* CFNetwork.framework in Frameworks */,
+				E53952641CD05119007E8D51 /* libc++.dylib in Frameworks */,
+				E53952621CD05108007E8D51 /* libicucore.dylib in Frameworks */,
+				E539525A1CD048D6007E8D51 /* FBSDKLoginKit.framework in Frameworks */,
+				E53952581CD048D6007E8D51 /* FBSDKCoreKit.framework in Frameworks */,
+				E539525C1CD048D6007E8D51 /* FBSDKShareKit.framework in Frameworks */,
+				E539525F1CD050BB007E8D51 /* Firebase.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5942E9D1CD0084500CFAE96 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E511F31E1CD1BC39006E3951 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				E511F3201CD1BC79006E3951 /* CollectionCenter.h */,
+				E511F3241CD1E152006E3951 /* CollectionCenter.m */,
+				E511F3291CD1FE81006E3951 /* Appointment.h */,
+				E5040D101CD2A95E002E5629 /* Appointment.m */,
+				E5116B471CD413530050C249 /* Donation.h */,
+				E5116B481CD4155C0050C249 /* Donation.m */,
+				E53B16AE1CD4D4CE00F5CA53 /* User.h */,
+				E53B16AF1CD4D54700F5CA53 /* User.m */,
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
+		E53952711CD0967B007E8D51 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				E53952721CD0968D007E8D51 /* FireBaseConfig.m */,
+				E53952741CD09708007E8D51 /* FireBaseConfig.h */,
+			);
+			name = Firebase;
+			sourceTree = "<group>";
+		};
+		E5942E7B1CD0084500CFAE96 = {
+			isa = PBXGroup;
+			children = (
+				E5DC28831CD205D40030B4BD /* MapKit.framework */,
+				E53952691CD0513B007E8D51 /* SystemConfiguration.framework */,
+				E53952671CD05130007E8D51 /* Security.framework */,
+				E53952651CD05127007E8D51 /* CFNetwork.framework */,
+				E53952631CD05119007E8D51 /* libc++.dylib */,
+				E53952611CD05108007E8D51 /* libicucore.dylib */,
+				E539525E1CD050BB007E8D51 /* Firebase.framework */,
+				E53952551CD048D6007E8D51 /* FBSDKCoreKit.framework */,
+				E53952561CD048D6007E8D51 /* FBSDKLoginKit.framework */,
+				E53952571CD048D6007E8D51 /* FBSDKShareKit.framework */,
+				E5942E861CD0084500CFAE96 /* BloodDonation-FinalProject */,
+				E5942EA31CD0084500CFAE96 /* BloodDonation-FinalProjectTests */,
+				E5942E851CD0084500CFAE96 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E5942E851CD0084500CFAE96 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E5942E841CD0084500CFAE96 /* BloodDonation-FinalProject.app */,
+				E5942EA01CD0084500CFAE96 /* BloodDonation-FinalProjectTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E5942E861CD0084500CFAE96 /* BloodDonation-FinalProject */ = {
+			isa = PBXGroup;
+			children = (
+				E511F31E1CD1BC39006E3951 /* Entities */,
+				E53952711CD0967B007E8D51 /* Firebase */,
+				E5942ECA1CD01A4F00CFAE96 /* Images */,
+				E5942EB01CD0086700CFAE96 /* ViewController */,
+				E5942E8C1CD0084500CFAE96 /* AppDelegate.m */,
+				E5942E8B1CD0084500CFAE96 /* AppDelegate.h */,
+				E5942E911CD0084500CFAE96 /* ViewController.h */,
+				E5942E921CD0084500CFAE96 /* ViewController.m */,
+				E5942E941CD0084500CFAE96 /* Main.storyboard */,
+				E5942E971CD0084500CFAE96 /* Images.xcassets */,
+				E5942E991CD0084500CFAE96 /* LaunchScreen.xib */,
+				E5942E8E1CD0084500CFAE96 /* BloodDonation_FinalProject.xcdatamodeld */,
+				E5942E871CD0084500CFAE96 /* Supporting Files */,
+			);
+			path = "BloodDonation-FinalProject";
+			sourceTree = "<group>";
+		};
+		E5942E871CD0084500CFAE96 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E5942E881CD0084500CFAE96 /* Info.plist */,
+				E5942E891CD0084500CFAE96 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E5942EA31CD0084500CFAE96 /* BloodDonation-FinalProjectTests */ = {
+			isa = PBXGroup;
+			children = (
+				E5942EA61CD0084500CFAE96 /* BloodDonation_FinalProjectTests.m */,
+				E5942EA41CD0084500CFAE96 /* Supporting Files */,
+			);
+			path = "BloodDonation-FinalProjectTests";
+			sourceTree = "<group>";
+		};
+		E5942EA41CD0084500CFAE96 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E5942EA51CD0084500CFAE96 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E5942EB01CD0086700CFAE96 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E5942EB11CD0087600CFAE96 /* LoginViewController.h */,
+				E5942EB21CD0088300CFAE96 /* LoginViewController.m */,
+				E539526B1CD07BDF007E8D51 /* HomeScreenViewController.h */,
+				E539526C1CD07BF3007E8D51 /* HomeScreenViewController.m */,
+				E539526E1CD09368007E8D51 /* CreateAccountViewController.h */,
+				E539526F1CD09368007E8D51 /* CreateAccountViewController.m */,
+				E5AD37D21CD15482000700EF /* ProfileViewController.h */,
+				E5AD37D31CD15482000700EF /* ProfileViewController.m */,
+				E511F3211CD1C141006E3951 /* HospitalListTableViewController.h */,
+				E511F3221CD1C141006E3951 /* HospitalListTableViewController.m */,
+				E511F3261CD1EF90006E3951 /* AvailableAppointmentViewController.h */,
+				E511F3271CD1EF90006E3951 /* AvailableAppointmentViewController.m */,
+				E50FC6441CD345F600BD06CE /* ViewAppointmentViewController.h */,
+				E50FC6451CD345F600BD06CE /* ViewAppointmentViewController.m */,
+				E50FC6471CD34D5700BD06CE /* MyAppointmentsTableViewController.h */,
+				E50FC6481CD34D5700BD06CE /* MyAppointmentsTableViewController.m */,
+				E5116B501CD433AC0050C249 /* DonationHistoryTableViewController.h */,
+				E5116B511CD433AC0050C249 /* DonationHistoryTableViewController.m */,
+				E5116B531CD49B040050C249 /* ViewDonationViewController.h */,
+				E5116B541CD49B040050C249 /* ViewDonationViewController.m */,
+				E53B16AB1CD4D48100F5CA53 /* RequestBloodTableViewController.h */,
+				E53B16AC1CD4D48100F5CA53 /* RequestBloodTableViewController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		E5942ECA1CD01A4F00CFAE96 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				E53B16B11CD4F40100F5CA53 /* createAccountBackground.jpg */,
+				E53B16A91CD4D03900F5CA53 /* launchScreen.jpg */,
+				E53B16A71CD4BDB800F5CA53 /* background.jpg */,
+				E5116B561CD49B240050C249 /* processing.png */,
+				E5116B571CD49B240050C249 /* testing.png */,
+				E5116B581CD49B240050C249 /* thedonation.jpg */,
+				E5116B4A1CD431440050C249 /* blood.png */,
+				E5116B4B1CD431440050C249 /* double.png */,
+				E5116B4C1CD431440050C249 /* platelets.png */,
+				E5040D0E1CD294E4002E5629 /* bloodDropMapAnnotation.png */,
+				E5AD37D71CD16642000700EF /* noPhoto.jpg */,
+				E5942ECB1CD01A7900CFAE96 /* loginHeader.png */,
+			);
+			name = Images;
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E5942E831CD0084500CFAE96 /* BloodDonation-FinalProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E5942EAA1CD0084500CFAE96 /* Build configuration list for PBXNativeTarget "BloodDonation-FinalProject" */;
+			buildPhases = (
+				E5942E801CD0084500CFAE96 /* Sources */,
+				E5942E811CD0084500CFAE96 /* Frameworks */,
+				E5942E821CD0084500CFAE96 /* Resources */,
+				E5942EBD1CD00A7700CFAE96 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BloodDonation-FinalProject";
+			productName = "BloodDonation-FinalProject";
+			productReference = E5942E841CD0084500CFAE96 /* BloodDonation-FinalProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E5942E9F1CD0084500CFAE96 /* BloodDonation-FinalProjectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E5942EAD1CD0084500CFAE96 /* Build configuration list for PBXNativeTarget "BloodDonation-FinalProjectTests" */;
+			buildPhases = (
+				E5942E9C1CD0084500CFAE96 /* Sources */,
+				E5942E9D1CD0084500CFAE96 /* Frameworks */,
+				E5942E9E1CD0084500CFAE96 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E5942EA21CD0084500CFAE96 /* PBXTargetDependency */,
+			);
+			name = "BloodDonation-FinalProjectTests";
+			productName = "BloodDonation-FinalProjectTests";
+			productReference = E5942EA01CD0084500CFAE96 /* BloodDonation-FinalProjectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E5942E7C1CD0084500CFAE96 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Vishal S Satam";
+				TargetAttributes = {
+					E5942E831CD0084500CFAE96 = {
+						CreatedOnToolsVersion = 6.4;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					E5942E9F1CD0084500CFAE96 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = E5942E831CD0084500CFAE96;
+					};
+				};
+			};
+			buildConfigurationList = E5942E7F1CD0084500CFAE96 /* Build configuration list for PBXProject "BloodDonation-FinalProject" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E5942E7B1CD0084500CFAE96;
+			productRefGroup = E5942E851CD0084500CFAE96 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E5942E831CD0084500CFAE96 /* BloodDonation-FinalProject */,
+				E5942E9F1CD0084500CFAE96 /* BloodDonation-FinalProjectTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E5942E821CD0084500CFAE96 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5116B4E1CD431440050C249 /* double.png in Resources */,
+				E53B16A81CD4BDB800F5CA53 /* background.jpg in Resources */,
+				E5116B5A1CD49B240050C249 /* testing.png in Resources */,
+				E5942ECC1CD01A7900CFAE96 /* loginHeader.png in Resources */,
+				E5116B5B1CD49B240050C249 /* thedonation.jpg in Resources */,
+				E5AD37D81CD16642000700EF /* noPhoto.jpg in Resources */,
+				E5942E961CD0084500CFAE96 /* Main.storyboard in Resources */,
+				E5116B4F1CD431440050C249 /* platelets.png in Resources */,
+				E5942E9B1CD0084500CFAE96 /* LaunchScreen.xib in Resources */,
+				E5116B591CD49B240050C249 /* processing.png in Resources */,
+				E53B16B21CD4F40100F5CA53 /* createAccountBackground.jpg in Resources */,
+				E53B16AA1CD4D03900F5CA53 /* launchScreen.jpg in Resources */,
+				E5942E981CD0084500CFAE96 /* Images.xcassets in Resources */,
+				E5040D0F1CD294E4002E5629 /* bloodDropMapAnnotation.png in Resources */,
+				E5116B4D1CD431440050C249 /* blood.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5942E9E1CD0084500CFAE96 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E5942E801CD0084500CFAE96 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E53B16B01CD4D54700F5CA53 /* User.m in Sources */,
+				E5942E901CD0084500CFAE96 /* BloodDonation_FinalProject.xcdatamodeld in Sources */,
+				E5116B491CD4155C0050C249 /* Donation.m in Sources */,
+				E5AD37D41CD15482000700EF /* ProfileViewController.m in Sources */,
+				E511F3281CD1EF90006E3951 /* AvailableAppointmentViewController.m in Sources */,
+				E5116B521CD433AC0050C249 /* DonationHistoryTableViewController.m in Sources */,
+				E53B16AD1CD4D48100F5CA53 /* RequestBloodTableViewController.m in Sources */,
+				E5040D111CD2A95E002E5629 /* Appointment.m in Sources */,
+				E53952701CD09368007E8D51 /* CreateAccountViewController.m in Sources */,
+				E53952731CD0968D007E8D51 /* FireBaseConfig.m in Sources */,
+				E50FC6491CD34D5700BD06CE /* MyAppointmentsTableViewController.m in Sources */,
+				E5942E8D1CD0084500CFAE96 /* AppDelegate.m in Sources */,
+				E50FC6461CD345F600BD06CE /* ViewAppointmentViewController.m in Sources */,
+				E511F3251CD1E152006E3951 /* CollectionCenter.m in Sources */,
+				E5942E931CD0084500CFAE96 /* ViewController.m in Sources */,
+				E5116B551CD49B040050C249 /* ViewDonationViewController.m in Sources */,
+				E539526D1CD07BF3007E8D51 /* HomeScreenViewController.m in Sources */,
+				E5942E8A1CD0084500CFAE96 /* main.m in Sources */,
+				E5942EB31CD0088300CFAE96 /* LoginViewController.m in Sources */,
+				E511F3231CD1C141006E3951 /* HospitalListTableViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5942E9C1CD0084500CFAE96 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5942EA71CD0084500CFAE96 /* BloodDonation_FinalProjectTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E5942EA21CD0084500CFAE96 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E5942E831CD0084500CFAE96 /* BloodDonation-FinalProject */;
+			targetProxy = E5942EA11CD0084500CFAE96 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E5942E941CD0084500CFAE96 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E5942E951CD0084500CFAE96 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E5942E991CD0084500CFAE96 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E5942E9A1CD0084500CFAE96 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E5942EA81CD0084500CFAE96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E5942EA91CD0084500CFAE96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E5942EAB1CD0084500CFAE96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"/Users/satam.v/Desktop/Vishal/FinalProject/FinalProject/FacebookSDKs-iOS-20150813",
+				);
+				INFOPLIST_FILE = "BloodDonation-FinalProject/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E5942EAC1CD0084500CFAE96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"/Users/satam.v/Desktop/Vishal/FinalProject/FinalProject/FacebookSDKs-iOS-20150813",
+				);
+				INFOPLIST_FILE = "BloodDonation-FinalProject/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E5942EAE1CD0084500CFAE96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "BloodDonation-FinalProjectTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BloodDonation-FinalProject.app/BloodDonation-FinalProject";
+			};
+			name = Debug;
+		};
+		E5942EAF1CD0084500CFAE96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "BloodDonation-FinalProjectTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BloodDonation-FinalProject.app/BloodDonation-FinalProject";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E5942E7F1CD0084500CFAE96 /* Build configuration list for PBXProject "BloodDonation-FinalProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5942EA81CD0084500CFAE96 /* Debug */,
+				E5942EA91CD0084500CFAE96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E5942EAA1CD0084500CFAE96 /* Build configuration list for PBXNativeTarget "BloodDonation-FinalProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5942EAB1CD0084500CFAE96 /* Debug */,
+				E5942EAC1CD0084500CFAE96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E5942EAD1CD0084500CFAE96 /* Build configuration list for PBXNativeTarget "BloodDonation-FinalProjectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5942EAE1CD0084500CFAE96 /* Debug */,
+				E5942EAF1CD0084500CFAE96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E5942E8E1CD0084500CFAE96 /* BloodDonation_FinalProject.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E5942E8F1CD0084500CFAE96 /* BloodDonation_FinalProject.xcdatamodel */,
+			);
+			currentVersion = E5942E8F1CD0084500CFAE96 /* BloodDonation_FinalProject.xcdatamodel */;
+			path = BloodDonation_FinalProject.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = E5942E7C1CD0084500CFAE96 /* Project object */;
+}
